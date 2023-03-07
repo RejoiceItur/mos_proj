@@ -23,9 +23,42 @@
     .style{
         text-align: center;
     }
+    /* .logo{
+      height: 71px;
+      width: 80px;
+    } */
+    .container1 {
+      position: relative;
+      text-align: center;
+    }
+    .centered {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #logo{
+      height: 20%;
+      width: 20%;
+    }
+    #bgimg{
+      width: 100%;
+      height: 10%;
+      opacity: 40%;
+    }
 </style>
 <body>
-    <center>
+    <div> 
+    <div class="container1">
+    <img src="clg_img1.jpg" alt="" id="bgimg">
+
+    <div class="centered">
+      <img src="clg_logo.png" alt="" id="logo"><br>
+      <h1 class="heading">St. Xavier's College, Mumbai <br>(Autonomous)</h1>
+    </div>
+  </div>   
+        <center>
+    
         <h1>Search data by name</h1>
 
         <div>
@@ -93,5 +126,6 @@
             
         </div>
     </center>
+    </div>
 </body>
 </html>

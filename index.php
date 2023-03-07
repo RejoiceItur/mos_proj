@@ -16,6 +16,13 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    .announce{
+      text-align: center;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
     #logo{
       height: 20%;
       width: 20%;
@@ -85,6 +92,26 @@
       </ul>
     </nav>
   </div>   <!--navbar ends-->
+   
+  <div class = "announce" >
+  <center> 
+    <table>
+      <tr>
+        <th>Imp ANNOUNCEMENTS</th>
+      </tr>
+      <tr>
+        <td>M.A. / M.Sc. Attendance Defaulter List Nov 2022 - Feb 2023</td>
+      </tr>
+      <tr>
+        <td>M.A. / M.Sc. Attendance Defaulter List Nov 2022 - Feb 2023</td>
+      </tr>
+      <tr>
+        <td>M.A. / M.Sc. Attendance Defaulter List Nov 2022 - Feb 2023</td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  
 
   <div class="degree">
     <h1 id="degree_heading">Degree courses</h1>

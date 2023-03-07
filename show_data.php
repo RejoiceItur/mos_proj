@@ -19,13 +19,36 @@
         padding:10px 20px;
         width: 10%;
     }
+    .container1 {
+      position: relative;
+      text-align: center;
+    }
+    .centered {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #logo{
+      height: 20%;
+      width: 20%;
+    }
+    #bgimg{
+      width: 100%;
+      height: 10%;
+      opacity: 40%;
+    }
 </style>
 <body>
-    <center>
-    <div>&nbsp;</div>
-    <img src="clg_logo.png" alt="">    
-    <h1 class="heading">St. Xavier's College, Mumbai <br>(Autonomous)</h1><br>
+    <div class="container1">
+    <img src="clg_img1.jpg" alt="" id="bgimg">
 
+    <div class="centered">
+      <img src="clg_logo.png" alt="" id="logo"><br>
+      <h1 class="heading">St. Xavier's College, Mumbai <br>(Autonomous)</h1>
+    </div>
+</div>
+    <center>
     
     <form action="stud_reco.php">
         <input type="submit" name="students_rec" value="Students info">
@@ -42,8 +65,6 @@
     <form action="marksheet.php">
         <input type="submit" name="marksheet_rec" value="Marksheet">
     </form>
-
-    </center>
 
 </body>
 </html>

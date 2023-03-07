@@ -1,0 +1,137 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>St. Xavier's College, Mumbai</title>
+<link rel="icon" href="clg_logo.png" type="image/icon type"> 
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: #f2cac8;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  border: 0;
+    background: none;
+    /* display: block; */
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 24px;
+    cursor: pointer;
+}  
+.registerbtn:hover {  
+  background: #049b43;  
+}  
+.resetbtn {  
+  border: 0;
+    background: none;
+    /* display: block; */
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 24px;
+    cursor: pointer;
+}  
+.resetbtn:hover {  
+  background: #049b43;  
+}  
+.logo{
+      height: 71px;
+      width: 80px;
+    }
+  a{
+    text-decoration: solid;
+    
+  }
+  .edit{
+    float: right;
+  }
+</style>  
+</head>  
+<body>  
+ 
+  <div class="container"> 
+    <center> 
+    <img class="logo" src="clg_logo.png" alt=""> 
+    <h1>St. Xavier's College Mumbai</h1>
+    <h2> Student Registeration Form</h2> 
+  </center>  
+  <hr>  
+  <form action="registration.php" method="post"> 
+   <div class="edit"> 
+    <a href="edit.php"><b>Edit record</b></a><br>
+  </div>
+  <div>&nbsp;</div>
+  <label> Firstname </label>   
+<input type="text" name="fname" placeholder= "Firstname" size="15" required />      
+<label> Lastname: </label>    
+<input type="text" name="lname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Course :  
+</label>   
+  
+<select name="course">  
+<option value="Course">Course</option>  
+<option value="BSc">BSc</option>  
+<option value="BA">BA</option>  
+<option value="BCOM">BCOM</option>  
+<option value="BAF">BAF</option>  
+<option value="BScIT">BSc.IT</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+<label>Email</label>  
+ <input type="email" placeholder="Enter Email" name="email" required><br>
+Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" name="address" required>  
+</textarea>  
+    <button type="reset" class="resetbtn">Reset</button>
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>  
